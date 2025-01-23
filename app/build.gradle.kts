@@ -74,5 +74,5 @@ dependencies {
         add(reflect.first, reflect.second)
         add(stdlib.first, stdlib.second)
     }
-    implementation(project(":base_di"))
+    implementation(project(":base2"))
 }

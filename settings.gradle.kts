@@ -38,5 +38,6 @@ dependencyResolutionManagement {
 rootProject.name = "rootooo"
 include(":app")
 include(":base_di")
+include(":base2")
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

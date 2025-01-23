@@ -1,7 +1,7 @@
 package com.example.dynamicfeature
 
 import android.util.Log
-import com.qianqi.basedi.init.AopGlobalInit
+import com.qianqi.base2.init.TestBase2
 
 class Test {
 
@@ -9,9 +9,9 @@ class Test {
         private const val TAG = "Test"
     }
 
-    @AopGlobalInit
     fun testInit() {
         Log.i(TAG, "testInit")
+//        TestBase2().testInit()
     }
 
 }
