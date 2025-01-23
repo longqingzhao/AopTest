@@ -1,0 +1,27 @@
+[versions]
+kotlin = "2.1.0"
+agp = "8.8.0"
+navigation = "2.8.5"
+ksp = "2.1.0-1.0.29"
+aop_version = "2.3.4"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+[libraries]
+gradlePlugin-kotlin-android = { module = "org.jetbrains.kotlin.android:org.jetbrains.kotlin.android.gradle.plugin", version.ref = "kotlin" }
+gradlePlugin-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+[plugins]
+gradle-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+gradle-agp-application = { id = "com.android.application", version.ref = "agp" }
+gradle-agp-library = { id = "com.android.library", version.ref = "agp" }
+gradle-navigation = { id = "androidx.navigation.safeargs", version.ref = "navigation" }
+gradle-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+gradle-dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
+fly-aop = { id = "io.github.FlyJingFish.AndroidAop.android-aop", version.ref = "aop_version" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "agp" }
